@@ -1,69 +1,185 @@
 #container{
-    background-color: rgb(238, 204, 231);
+    background-color: rgb(248, 211, 211);
+    height: 400px;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*head*/
+.headerbar{
+    background-color: rgb(246, 101, 130);
+    width:100%;
+    height:50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.leftbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;  
+    width: 20em;
+}
+
+.imagecontainer{
+             display: flex;
+             align-items: center;
+             }
+
+.text{
+    font-size:1.5em;
+    color: aliceblue;
+    width: 6em;
+    
+}
+
+.items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 10em;
+}
+
+.rightbar{
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    
-
 }
 
-.part2{
- justify-content: space-between;
- align-items: center;
- display: flex;
- padding: 16px;
- width: 600px;
- display: flex;
- 
-
-
-}
-
-.items {
-    color: rebeccapurple;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-  }
-  
-
-.part1{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
+.right{
     flex-direction: row;
-    position: fixed;
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(244, 114, 114);
+    width: 20em;
     }
 
-    #main{
-        display:flex;
-        background-color: rgb(241, 213, 245);
-        flex-direction: column;
-        padding: 10px;
-    
-    }
 
-    .drama{
-        text-align: center;
-        padding: 16px;
-    }
-
-    .main2{
+/*main content*/
+    .head-main{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 50px;
-        padding-bottom: 12px;
-        
+        width: 100%;
+        align-items: center;
     }
 
-    .drama1{
-        max-width: 300px;
+    .leftstuff{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+        text-align: start;
+        flex-direction: column;
+        width: 500px;
+    }
+    .context{
+        font-size: 20px;
+    }
+
+    .rightstuff{
+        position: absolute;
+        right: 0%;
+        padding:16px;
+    }
+
+    /*drama content*/
+
+    .drama-container{
+        display: flex;
+    
+        justify-content:center ;
+        align-items:  center;
+        width: 100%;
+  
+  
+    }
+    .title{
+        text-align: center;
+        padding: 16px;
+
+    }
+
+    .dramas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        gap: 8px;
+        padding: 24px;  
+        color: rgb(228, 161, 241);
+        text-shadow: 2px 2px 1px black;
+      }
+
+      .drama-img {
+        width: 200px;
+        text-align: center;
+      }
+
+      .drama-text {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        flex-wrap: wrap;
+        max-width: 200px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .contact-section {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         text-align: center;
-        
-    }
+        width: 100%;
+        background-image: linear-gradient(
+            60deg,
+            rgba(57, 60, 90, 0.85),
+            rgba(180, 180, 120, 0.5)
+          ),
+          url(https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQbnZKSnJDwj_5MfczXgSbMhhDLqb387pcgEshLqqYEJ59Immp_O0G3aHJ7lnDmPxMoGtm3QMqiV8mYunpqX23Om1Kea7-QSRSx8KMa3q7gZYFFR00DGW5Xuc0huyoOhHLtekp2RJ9HEKej1YTwtk04f_1CI.jpg?r=0ac);
+        background-position: center;
+        background-size: cover;
+      
+        font-weight: bold;
+        text-shadow: black 1px 1px;
+        color: azure;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 24px;
+        font-size: 20px;
+        color: azure;
+      }
+
+      .contact-icon {
+        height: 30px;
+        width: 30px;
+      }
+
+      /*footer*/
+      .footer{
+        text-align: center;
+        padding:16px;
+        width:100%;
+        background-color: rgb(245, 165, 171);
+        color: azure;
+      }
+      
+
+
+      
+
+
+
+    
